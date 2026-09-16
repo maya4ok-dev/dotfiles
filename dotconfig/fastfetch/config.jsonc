@@ -1,0 +1,44 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+      "percent": {
+          "color": {
+              "green": "blue",
+              "yellow": "yellow",
+              "red": "red"
+          }
+      },
+      "color": {
+          "keys": "blue",
+          "title": "blue",
+          "output": "white"
+      },
+      "separator": " "
+  },
+  "logo": {
+      "type": "file",
+      "source": "~/.config/fastfetch/boykisser.txt",
+      "color": {
+          "1": "blue",
+          "2": "white",
+          "3": "red"
+      }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "packages",
+    "display",
+    "wm",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter"
+  ]
+}

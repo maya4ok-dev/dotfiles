@@ -1,0 +1,17 @@
+#!/bin/sh
+
+choice=$(
+{
+    hyprctl monitors -j | jq -r '.[].name | "screen:" + .'
+    hyprctl clients -j | jq -r '.[] | "window:" + .address + " " + .title'
+} | fuzzel --dmenu
+)
+
+case "$choice" in
+    screen:*)
+        echo "[SELECTION]/$choice"
+        ;;
+    window:*)
+        echo "[SELECTION]/$choice"
+        ;;
+esac

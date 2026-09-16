@@ -1,0 +1,6 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("hyprctl setcursor Bibata-Catppuccin-Mocha 24")
+    hl.exec_cmd("xrandr --output DP-1 --primary")
+    hl.exec_cmd("waybar")
+end)

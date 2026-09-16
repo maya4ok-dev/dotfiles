@@ -1,0 +1,22 @@
+{
+    "layer": "top",
+    "height": 24,
+    "passthrough": true,
+    
+    "modules-left": [
+        "hyprland/workspaces" 
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "hyprland/language",
+        "wireplumber"
+    ],
+
+    "hyprland/language": {
+        "format": "{short}"
+    }
+}

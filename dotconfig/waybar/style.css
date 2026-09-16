@@ -1,0 +1,51 @@
+* {
+    font-family: "Iosevka Nerd Font";
+    font-size: 15px;
+    font-weight: 500; /* medium */
+
+    color: #cdd6f4;
+}
+
+window#waybar {
+    background-color: #181825;
+}
+
+#workspaces {
+    /* to balance the padding if the module is in the corner */
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#workspaces button {
+    /* reset the fucking defaults which fucks up everything */
+    padding: 0;
+    margin: 0;
+
+    /* set normal parameters */
+    padding-left: 3px;
+    padding-right: 3px;
+
+    margin-left: 2px;
+    margin-right: 2px;
+
+    border-radius: 20%;
+}
+
+#workspaces button.active {
+    background-color: #45475a;
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}
+
+#wireplumber, #language {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modules-right {
+    margin-right: 5px;
+}
+
